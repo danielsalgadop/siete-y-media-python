@@ -50,12 +50,26 @@ class Tablero:
 			print cartas
 			print j.total
 	def CalculosBankia(self):
+		bankia =""
 		print "Calcular quien esta CROCRO mas cerca, para saber cuanto me tengo que acercar"
 		#~ print "BANK\n"*44
+		mas_cerca = 0;
+		for j in self.ListaJugadores:
+			print j
 		for j in self.ListaJugadores:
 			listaCartas = j.ListaObjCartasUnJugador(j)
 			#~ print "para este jugador="+j.nombre+" tiene un total= "+str(j.total)+"\n"
-			print j;
+			if j.nombre != "bankia":
+				if j.eliminado != "si":
+					if j.total > mas_cerca:
+						mas_cerca = j.total
+
+			# para ganar tengo q mejorar mas_cerca
+			print "el mas cerca es"
+			print mas_cerca
+			print "el mas cerca es"
+			# Decidir si bankia tiene q jugar
+			
 			#~ cartas = ""
 			#~ for unacarta in listaCartas:
 				#~ cartas += str(unacarta)

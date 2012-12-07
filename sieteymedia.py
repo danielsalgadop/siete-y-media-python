@@ -8,24 +8,26 @@ pp = pprint.PrettyPrinter(indent=4)
 #~ partida =["inicio","jugador","banca","results"]
 class Partida:
 	estado=["jugador","banca","results"]
+	nivel = 99
 	def __init__(self, fecha="unaFecha"):
 		self.fecha = fecha
 		self.num_jug="0"
 		# opciones del usuario
 		ObjTablero = tablero.Tablero(input('Numero de jugadores'))
+		mensaje_quieres_carta = "quieres otra carta   (s - si /n - no / p planto /q - quit)"
 		for jugador in  ObjTablero.ListJugadores():
 			ObjTablero.darCartaJugador(jugador)
 			print ObjTablero
 			if jugador.nombre == "bankia":
 				pass
 			else:
-				resp = raw_input("quieres otra carta   (s - si /n - no / p planto /q - quit)")
+				resp = raw_input(mensaje_quieres_carta)
 				# Dar cuantas cartas quiera sin pasarse de 7.5
 				while resp == "s":
 					ObjTablero.darCartaJugador(jugador)
 					print ObjTablero
 					if jugador.eliminado == "no":
-						resp = raw_input("quieres otra carta")
+						resp = raw_input(mensaje_quieres_carta)
 					else:
 						resp = "n"
 		for xjugador in  ObjTablero.ListJugadores():

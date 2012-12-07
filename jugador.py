@@ -11,8 +11,10 @@ class Jugador:
 		
 	def __str__(self):
 		r = self.nombre
-		r += "XXXXXX"
+		r += "XXXXXXTOTAL\t\t"
 		r += str(self.total)
+		r += "\t\tXXXXXXELIMINADO"
+		r += self.eliminado
 		return r
 	
 	def agregarCarta(self,carta):
