@@ -30,7 +30,7 @@ class Partida:
 						resp = "n"
 		for xjugador in  ObjTablero.ListJugadores():
 			if xjugador.nombre == "bankia":
-				ObjTablero.CalculosBankia
+				ObjTablero.CalculosBankia();
 		
 				
 				# Calcular las probabilidades

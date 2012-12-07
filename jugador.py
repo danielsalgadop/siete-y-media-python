@@ -8,6 +8,12 @@ class Jugador:
 		self.miscartas=[]
 		self.eliminado="no"
 		self.total=0
+		
+	def __str__(self):
+		r = self.nombre
+		r += "XXXXXX"
+		r += str(self.total)
+		return r
 	
 	def agregarCarta(self,carta):
 		

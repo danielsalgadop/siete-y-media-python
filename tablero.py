@@ -51,14 +51,15 @@ class Tablero:
 			print j.total
 	def CalculosBankia(self):
 		print "Calcular quien esta CROCRO mas cerca, para saber cuanto me tengo que acercar"
-		print "BANK\n"*44
+		#~ print "BANK\n"*44
 		for j in self.ListaJugadores:
 			listaCartas = j.ListaObjCartasUnJugador(j)
 			#~ print "para este jugador="+j.nombre+" tiene un total= "+str(j.total)+"\n"
-			cartas = ""
-			for unacarta in listaCartas:
-				cartas += str(unacarta)
-			print j.nombre
-			print cartas
-			print j.total
+			print j;
+			#~ cartas = ""
+			#~ for unacarta in listaCartas:
+				#~ cartas += str(unacarta)
+			#~ print j.nombre
+			#~ print cartas
+			#~ print j.total
 
