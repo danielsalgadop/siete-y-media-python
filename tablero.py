@@ -59,15 +59,24 @@ class Tablero:
 		for j in self.ListaJugadores:
 			listaCartas = j.ListaObjCartasUnJugador(j)
 			#~ print "para este jugador="+j.nombre+" tiene un total= "+str(j.total)+"\n"
-			if j.nombre != "bankia":
+			if j.nombre == "bankia":
+				bankia = j
+				print bankia
+				print bankia.total
+			else:
 				if j.eliminado != "si":
 					if j.total > mas_cerca:
 						mas_cerca = j.total
 
 			# para ganar tengo q mejorar mas_cerca
-			print "el mas cerca es"
-			print mas_cerca
-			print "el mas cerca es"
+			if mas_cerca !=  0:  # si es cero, bankia no hace nada y gana
+				#bankia_necesita = bankia.total
+				#print(bankia)
+				#print mas_cerca
+				#diff_con_jugador = bankia.total - mas_cerca
+				print "el mas cerca es"
+				print mas_cerca
+				print "el mas cerca es"
 			# Decidir si bankia tiene q jugar
 			
 			#~ cartas = ""
