@@ -28,14 +28,16 @@ class Jugador:
 			self.eliminado="si"
 	
 	def mostrarCartas(self):
-		r = ""
+		#~ que cartas tiene
+		#~ r = ""
 		for unacarta in self.miscartas:
-			cartapalo = "("
-			cartapalo += str(unacarta.valor)
-			cartapalo += " "
-			cartapalo += unacarta.palo
-			cartapalo += ")"
-			r += cartapalo
+			r = [unacarta.valor,unacarta.palo]
+			#~ cartapalo = "("
+			#~ cartapalo += str(unacarta.valor)
+			#~ cartapalo += " "
+			#~ cartapalo += unacarta.palo
+			#~ cartapalo += ")"
+			#~ r += cartapalo
 		return r
 
 	def ListaObjCartasUnJugador(self,jugador):

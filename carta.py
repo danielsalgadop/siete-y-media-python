@@ -2,6 +2,7 @@
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
+
 class Carta ():
 	x=4
 	def __init__(self, palo=0, valor=0):
@@ -12,7 +13,6 @@ class Carta ():
 		return("("+str(self.valor)+" "+self.palo+") ")
 
 class Mazo:
-	atributo="clase"
 	#~ def EligePalo():
 	def __init__(self):
 		numeros = [1,2,3,4,5,6,7,10,11,12]
@@ -23,9 +23,9 @@ class Mazo:
 				self.cartas.append(Carta(palo, valor))
 			
 	#~ def muestraMazo(self):
-	def muestraMazo(self):
-		for carta in self.cartas:
-			print carta.valor," ",carta.palo
+	#~ def muestraMazo(self):
+		#~ for carta in self.cartas:
+			#~ print carta.valor," ",carta.palo
 
 	def mezclar(self):
 		import random
