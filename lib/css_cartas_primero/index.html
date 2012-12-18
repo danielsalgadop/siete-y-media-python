@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- CARTAS sacadas de http://demos.sixrevisions.com/2010/08/26/Demo.html#clubs -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Playing Cards with CSS3!</title>
+		 <link rel="stylesheet" type="text/css" href="css/css.css">
+		 
+		<script type="text/javascript">
+			function bootup(){
+			if (location.hash == "") { location.hash="#spades"; } var tds = document.getElementsByTagName("a"); direct();
+			for( var x=0; x < tds.length; x++ ){tds[x].onclick = function(){setTimeout(direct, 1);};}
+		}
+		function direct(){
+			var counted = document.getElementsByTagName("div");
+			for( var x=0; x < counted.length; x++ ){ counted[x].style.display = "none" } 
+			document.getElementById(location.hash.substr(1)).style.display = "block";
+		}
+		window.onload=bootup;
+		</script>
+	</head>
+	<body>
+	<ul><li><a title="Select Spades" href="#spades">&#9824;</a></li><li><a class="fire" title="Select Hearts" href="#hearts">&#9829;</a></li><li><a title="Select Clubs" href="#clubs">&#9827;</a></li><li><a class="fire" title="Select Diamonds" href="#diamonds">&#9830;</a></li></ul>
+			<div id="spades"><input class="card" id="spade" type="radio" name="spade" value="spade" /><label class="carta" for="spade" title="This is the Ace of Spades!"><span><em>A</em>&#9824;</span><strong>&#9824;</strong><em>A</em>&#9824;</label><input id="cancel1" type="reset" name="spade" value="cancel" checked="checked" /><label class="close" for="cancel1">Spades</label></div>
+			<div id="hearts"><input class="card" id="heart" type="radio" name="heart" value="heart" /><label class="carta fire" for="heart" title="This is the Ace of Hearts!"><span><em>A</em>&#9829;</span><strong>&#9829;</strong><em>A</em>&#9829;</label><input id="cancel2" type="reset" name="heart" value="cancel" checked="checked" /><label class="close" for="cancel2">Hearts</label></div>
+			<div id="clubs"><input class="card" id="club" type="radio" name="club" value="club" /><label class="carta" for="club" title="This is the Ace of Clubs!"><span><em>A</em>&#9827;</span><strong>&#9827;</strong><em>A</em>&#9827;</label><input id="cancel3" type="reset" name="club" value="cancel" checked="checked" /><label class="close" for="cancel3">Clubs</label></div>
+			<div id="diamonds"><input class="card" id="diamond" type="radio" name="diamond" value="diamond" /><label class="carta fire" for="diamond" title="This is the Ace of Diamonds!"><span><em>A</em>&#9830;</span><strong>&#9830;</strong><em>A</em>&#9830;</label><input id="cancel4" type="reset" name="diamond" value="cancel" checked="checked" /><label class="close" for="cancel4">Diamonds</label></div>
+	<p>Select an option above to change thjjjjje suit displayed!</p>
+	</body>	
+</html>
