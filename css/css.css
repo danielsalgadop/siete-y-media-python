@@ -1,0 +1,76 @@
+/*
+ * Cartas sacadas de 
+http://demos.sixrevisions.com/2010/08/26/Demo.html#clubs
+* 
+* */
+			body { background: #DDDDDD; overflow: hidden; }
+			body .fire { color: #FF0000; }
+			p {
+				background: #FFFFFF; border: 1px solid #CCCCCC;
+				border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+				box-shadow: 5px 5px 5px #CCCCCC; -webkit-box-shadow: 5px 5px #CCCCCC; -moz-box-shadow: 5px 5px #CCCCCC;
+				filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=5);
+				font-size: 25px; text-align: center;
+				height: 30px; width: 600px; margin: -35px -300px; padding: 10px 15px; position: absolute; bottom: 50px; left: 50%; z-index: 99;
+			}
+			ul {
+				background: #FFFFFF; border: 1px solid #CCCCCC;
+				background:-moz-linear-gradient(top, #FFFFFF, #DDDDDD); background:-webkit-gradient(linear,0 0, 0 100%, from(#FFFFFF), to(#DDDDDD));
+				border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+				box-shadow: 5px 5px 5px #CCCCCC; -webkit-box-shadow: 5px 5px #CCCCCC; -moz-box-shadow: 5px 5px #CCCCCC;
+				filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=5);
+				font-size: 50px;
+				margin: 0; padding: 0 15px; position: absolute; right: 20px; top: 15px; z-index: 99;
+			}
+			ul li {
+				list-style-type: none;
+			}
+			ul li a {
+				color: #000000;
+				display: block; float: left; padding: 0 10px;
+				text-decoration: none;
+			}
+		.carta {
+			background: #FFFFFF; border: 1px solid #CCCCCC; color: #000000;
+			background:-moz-linear-gradient(top, #FFFFFF, #DDDDDD); background:-webkit-gradient(linear,0 0, 0 100%, from(#FFFFFF), to(#DDDDDD));
+			border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+			box-shadow: 5px 5px 5px #CCCCCC; -webkit-box-shadow: 5px 5px #CCCCCC; -moz-box-shadow: 5px 5px #CCCCCC;
+			filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=5);
+			height: 360px; top: 50%; margin-top: -180px; width: 260px; left: 50%; margin-left: -130px; z-index: 9;
+			cursor: pointer; font-size: 50px; text-decoration: none;
+			padding: 15px 0 0 25px; position: absolute;
+			z-index:1px;
+		}
+		strong {
+			font-size: 250px;
+			position: absolute; left: 50%; top: 50%; margin-top: -160px;
+			-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.4)), to(rgba(0,0,0,1)));
+		}
+		em {
+			font-size: 40px; font-style: normal;
+			display: block; margin-bottom: -15px;
+		}
+		label span {
+			-webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -o-transform: rotate(-180deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+			position: absolute; bottom: 15px; right: 25px;
+		}
+		#spades strong { margin-left: -68px; } #spades em { margin-left: 0; }
+		#hearts strong { margin-left: -70px; } #hearts em { margin-left: 1px; }
+		#clubs strong { margin-left: -80px; } #clubs em { margin-left: 3px; }
+		#diamonds strong { margin-left: -60px; } #diamonds em { margin-left: -2px; }
+		fieldset { display: none; }
+		fieldset:target { display: block; }
+		fieldset:target .card+label { -webkit-animation-name: scaler; -webkit-animation-duration: 1.75s; -webkit-animation-iteration-count: 1; }
+		fieldset:target .card:checked+label { -webkit-animation-name: effectx; -webkit-animation-duration: 3s; -webkit-transform: scale(0); }
+		.close {
+			background: #DDDDDD; cursor: default;
+			left: 0; top: 0; position: absolute; height: 100%; width: 100%; z-index: 1;
+			text-indent: -999em;
+		}
+/*			ANIMACION EN CHROME
+		@-webkit-keyframes scaler { from { -webkit-transform: scale(0); } to { -webkit-transform: scale(1); } }
+		@-webkit-keyframes effectx {
+			from { -webkit-transform: rotateX(0deg); }
+			to { -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(500px) rotate(180deg); -webkit-animation-duration: 30s; }
+		}
+*/

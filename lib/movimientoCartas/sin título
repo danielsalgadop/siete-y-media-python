@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>El club del programador</title>
+        <style type="text/css">
+        *{padding:0px;margin:0px;}
+            .cartas{
+                position: relative;
+                height: 200px;
+                width: 200px;
+                float: left;
+                margin: 20px;
+            }
+            .cartas:hover{
+                z-index: 1000;
+            }
+            .carta{
+                display: block;
+                position: absolute;
+                top:0px;
+                left: 0px;
+                width: 200px;
+                height: 200px;
+                background: #fff;
+                transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                overflow: hidden;
+                padding: 10px;
+                box-shadow:#555 0px 1px 5px;
+            }
+            .carta:nth-child(2){
+                height: 194px;
+                width: 194px;
+                top: 3px;
+                left: 8px;
+            }
+            .carta:nth-child(1){
+                height: 188px;
+                width: 188px;
+                top: 6px;
+                left: 16px;
+            }
+            .cartas:hover .carta{
+                width: 200px;
+                height: 200px;
+ 
+            }
+            .cartas:hover .carta:nth-child(1){
+                left: 60px;
+                transform:rotate(5deg);
+                -ms-transform:rotate(5deg);
+                -moz-transform:rotate(5deg);
+                -webkit-transform:rotate(5deg);
+                -o-transform:rotate(5deg);
+            }
+            .cartas:hover .carta:nth-child(2){
+ 
+            }
+            .cartas:hover .carta:nth-child(3){
+                left: -60px;
+                transform:rotate(-5deg);
+                -ms-transform:rotate(-5deg);
+                -moz-transform:rotate(-5deg);
+                -webkit-transform:rotate(-5deg);
+                -o-transform:rotate(-5deg);
+            }
+            </style>
+            </head>
+            <body>
+        <div class="cartas">           
+            <img class="carta" alt=":)" src="http://3.bp.blogspot.com/_64tx1fPqfg8/S3BDTjIym8I/AAAAAAAAAa8/Fw5EZxA9Zs0/s320/image-upload-90-761985.jpg" />
+            <img class="carta" alt=":)" src="http://1.bp.blogspot.com/_64tx1fPqfg8/SrDdyj7o9mI/AAAAAAAAAPA/U70JABqBt-w/s320/image-upload-51-798046.jpg" />
+            <img class="carta" alt=":)" src="http://1.bp.blogspot.com/_64tx1fPqfg8/SyDv-R9lWbI/AAAAAAAAAak/7C3lqaJG_SA/s320/image-upload-17-785644.jpg" />
+        </div>        
+</body>
+</html>
