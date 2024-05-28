@@ -6,3 +6,4 @@ juego simple siete y media
 
 - sacar output en HTML
 - migrar a python3 (bueno, es que ahora mismo no funciona ni en python2)
+toe
