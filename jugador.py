@@ -44,6 +44,10 @@ class Jugador:
         for unacarta in self.my_cards:
             r.append(unacarta)
         return r
+    def allCardsPublic(self):
+        # this could be done 'last two cards public'
+        for card in self.my_cards:
+            card.private = False
 
 
 class Bankia(Jugador):
